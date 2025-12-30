@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #ffffff; /* Changed to white for better contrast with dark background */
-  --background: #000000; /* Changed to black for the overlay */
+  --foreground: #ffffff;
+  --background: #000000;
 }
 
 body {
@@ -17,15 +17,37 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* Prevent scrolling bounce on mobile */
+  overscroll-behavior-y: none;
 }
 
 body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+
+@layer utilities {
+  /* Mobile app-style smooth scrolling */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Mobile tap highlight removal */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
