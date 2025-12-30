@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "style-match-8d882",
     "public": "out",
     "ignore": [
       "firebase.json",
