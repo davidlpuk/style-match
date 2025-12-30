@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "deploy": "next build && firebase deploy --only hosting"
   },
   "keywords": [
     "fashion",
@@ -33,6 +34,7 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8.0.0",
     "eslint-config-next": "^14.0.0",
+    "firebase-tools": "^15.1.0",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.0.0"
