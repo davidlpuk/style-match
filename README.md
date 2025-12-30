@@ -20,23 +20,39 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Setup Firebase
+
+1. Copy `.env.example` to `.env.local`:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. Add your Firebase credentials from the Firebase Console to `.env.local`
+
+3. Start development:
+   ```bash
+   npm run dev
+   ```
+
 ### Deploy to Firebase (View on Mobile)
 
-1. Update `.firebaserc` with your Firebase project ID
-2. Run deployment:
+1. Build and deploy:
    ```bash
    npm run deploy
    ```
-3. Access the URL on your mobile device!
+
+2. Access at **https://style-match-8d882.web.app** on any device!
 
 📱 See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed deployment instructions.
 
 ## Tech Stack
-- Frontend: React + Next.js 14
-- Styling: Tailwind CSS
-- Language: TypeScript
-- Hosting: Firebase Hosting
-- Image Storage: Cloudinary (planned)
+- **Frontend**: React + Next.js 14
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Database**: Firebase Firestore
+- **Authentication**: Firebase Authentication
+- **Image Storage**: Firebase Storage
+- **Hosting**: Firebase Hosting
 
 ## Project Structure
 
@@ -53,9 +69,10 @@ style-match/
 
 ## Documentation
 
-- [Architecture](docs/ARCHITECTURE.md)
-- [Deployment Guide](docs/DEPLOYMENT.md)
-- [Contributing](docs/CONTRIBUTING.md)
+- [Architecture](docs/ARCHITECTURE.md) - Firebase integration & tech stack
+- [Deployment Guide](docs/DEPLOYMENT.md) - Firebase Hosting deployment
+- [Sitemap](docs/SITEMAP.md) - App structure & routes
+- [Contributing](docs/CONTRIBUTING.md) - Development guidelines
 
 ## License
 MIT
