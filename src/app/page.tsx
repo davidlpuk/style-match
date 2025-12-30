@@ -1,18 +1,18 @@
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-24">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold mb-4">
+    <main className="min-h-screen flex flex-col items-center justify-center text-white font-sans p-4">
+      <div className="text-center max-w-3xl">
+        <h1 className="text-8xl font-bold mb-4 font-serif tracking-tight [text-shadow:_0_2px_4px_rgb(0_0_0_/_50%)]">
           Style Match
         </h1>
-        <p className="text-xl text-gray-600 mb-8">
-          Fashion coordination for style-conscious couples
+        <p className="text-2xl text-gray-200 mb-10 [text-shadow:_0_1px_3px_rgb(0_0_0_/_50%)]">
+          Dress better, together.
         </p>
         <div className="flex gap-4 justify-center">
-          <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800">
-            Get Started
+          <button className="px-8 py-4 bg-pink-500 text-white rounded-full font-bold text-lg hover:bg-pink-600 transition-colors tracking-wide">
+            Find Your Match
           </button>
-          <button className="px-6 py-3 border border-black rounded-lg hover:bg-gray-100">
+          <button className="px-8 py-4 border border-white rounded-full font-bold text-lg hover:bg-white hover:text-black transition-colors tracking-wide">
             Learn More
           </button>
         </div>
