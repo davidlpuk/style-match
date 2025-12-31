@@ -36,6 +36,7 @@ yarn.lock
 .cache/
 .temp/
 tmp/
+tsconfig.tsbuildinfo
 
 # Database
 *.db
