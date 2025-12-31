@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col text-white font-sans">
@@ -60,6 +62,13 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Wireframes Link */}
+      <div className="text-center pb-8">
+        <Link href="/wireframes/index-nav" className="text-xs text-gray-400 hover:text-white underline">
+          View Wireframes
+        </Link>
       </div>
     </main>
   )
